@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option go_package = "github.com/mjm/boss/api";
+
+service Boss {
+    rpc StartTasks(StartTasksRequest) returns (StartTasksResponse);
+}
+
+message StartTasksRequest {
+    repeated string names = 1;
+}
+
+message StartTasksResponse {
+}

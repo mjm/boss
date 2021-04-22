@@ -12,3 +12,10 @@
 gotool = //third_party/go:toolchain|go
 ;goroot - ... 
 importpath = "github.com/mjm/boss"
+
+[proto]
+language = go
+protoctool = //third_party/proto:protoc
+protocgoplugin = //third_party/go:protoc-gen-go
+godep = //third_party/go:com_github_golang_protobuf
+gogrpcdep = //third_party/go:org_golang_google_grpc
